@@ -1,0 +1,17 @@
+{
+  "manifest_version": 3,
+  "name": "紅蓮の弓矢",
+  "version": "1.0",
+  "description": "Displays a draggable and rotatable red arrow on web pages.",
+  "icons": {
+    "48": "icon.png"
+  },
+  "content_scripts": [
+    {
+      "matches": ["*://*/*"],
+      "js": ["content.js"],
+      "css": ["styles.css"]
+    }
+  ],
+  "permissions": ["activeTab"]
+}
