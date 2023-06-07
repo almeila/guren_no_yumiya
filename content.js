@@ -44,7 +44,7 @@
   function handleRightClick(e) {
     e.preventDefault();
     const currentRotation = arrow.style.transform || 'rotate(0deg)';
-    const rotationValue = parseInt(currentRotation.match(/\d+/)) + (- 90);
+    const rotationValue = parseInt(currentRotation.match(/\d+/)) + (+ 270);
     arrow.style.transform = `rotate(${rotationValue % 360}deg)`;
   }
 })();
